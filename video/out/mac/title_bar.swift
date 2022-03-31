@@ -188,6 +188,7 @@ class TitleBar: NSVisualEffectView {
 
         if #available(macOS 10.14, *) {
             switch string {
+#if HAVE_MACOS_10_14_FEATURES
             case "2", "darkAqua":
                 return NSAppearance(named: .darkAqua)
             case "5", "aquaHighContrast":
@@ -198,6 +199,7 @@ class TitleBar: NSVisualEffectView {
                 return NSAppearance(named: .accessibilityHighContrastVibrantLight)
             case "8", "vibrantDarkHighContrast":
                 return NSAppearance(named: .accessibilityHighContrastVibrantDark)
+#endif
             case "0", "auto": fallthrough
             default:
 #if HAVE_MACOS_10_14_FEATURES
