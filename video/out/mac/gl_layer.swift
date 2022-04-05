@@ -187,14 +187,14 @@ class GLLayer: CAOpenGLLayer {
 
     func atomicDrawingStart() {
         if draw == .normal {
-            NSDisableScreenUpdates()
+            //NSDisableScreenUpdates()
             draw = .atomic
         }
     }
 
     func atomicDrawingEnd() {
         if draw.rawValue >= Draw.atomic.rawValue {
-            NSEnableScreenUpdates()
+            //NSEnableScreenUpdates()
             draw = .normal
         }
     }

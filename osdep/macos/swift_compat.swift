@@ -15,7 +15,8 @@
  * License along with mpv.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#if !HAVE_MACOS_10_14_FEATURES
+//#if !HAVE_MACOS_10_14_FEATURES
+#if false
 extension NSAppearance.Name {
     static let darkAqua: NSAppearance.Name = NSAppearance.Name(rawValue: "NSAppearanceNameDarkAqua")
     static let accessibilityHighContrastAqua: NSAppearance.Name = NSAppearance.Name(rawValue: "NSAppearanceNameAccessibilityAqua")
